@@ -1,0 +1,77 @@
+@media (max-width: 1024px) {
+
+  .home .informacoes {
+    padding: 30px;
+  }
+
+  .home .informacoes .titulo {
+    font-size: 40px;
+  }
+
+  .buy .cartao {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .buy {
+    padding: 30px;
+  }
+
+  .buy .cartao {
+    padding: 80px 20px;
+    width: 100%;
+  }
+
+  .buy .informacoes h3 {
+    font-size: 35px;
+  }
+
+  .buy .informacoes .plataformas {
+    flex-direction: column;
+  }
+
+  .btn-plataforma {
+    margin-top: 15px;
+    padding: 15px;
+  }
+
+  .btn-comprar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .cabecalho {
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 15px;
+  }
+  
+  .cabecalho .menu li a {
+    padding: 4px;
+    width: 2px;
+  }
+  
+    .home .informacoes img {
+    max-width: 100px;
+  }
+  
+  main::after {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4) 100%, transparent 65%);
+  }
+  
+.btn-comprar {
+    height: 60px;
+  }
+  
+.iframe { 
+  width: 360px;
+  height: 350px;
+}
+
+  .buy .cartao .capa-do-jogo {
+    max-width: 80%;
+  }
+}
