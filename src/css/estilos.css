@@ -1,0 +1,371 @@
+body {
+    background-color: #141319;
+    color: #fff;
+}
+
+.cabecalho {
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
+}
+
+.cabecalho .logo {
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu li a {
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: "Chalet";
+    transition: color 0.3s ease;
+}
+
+.cabecalho .menu li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7) 35%, transparent 65%);
+}
+
+.home .imagem-fundo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+}
+
+.home .informacoes img {
+    max-width: 150px;
+}
+
+.home .informacoes .lista-de-jogos {
+    display: flex;
+    gap: 32px;
+}
+
+.home .informacoes .titulo {
+    font-family: "ChaletComprime";
+    font-size: 55px;
+}
+
+.home .informacoes .texto {
+    font-family: "Chalet";
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn-comprar,
+.btn-plataforma {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: "ChaletComprime";
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all 0.3s ease-in;
+}
+
+.btn-plataforma {
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.leonida {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+}
+
+.leonida .titulo {
+    font-family: "BebasNeue-Regular";
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.iframe { 
+  width: 600px;
+  height: 350px;
+  display: block;
+  margin:auto;
+}
+
+.buy .capa-do-jogo {
+    width: 270px;
+}
+
+.buy {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+}
+
+.buy .titulo {
+    font-family: "ChaletComprime";
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.buy .cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+}
+
+.buy .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.buy .informacoes h3 {
+    font-family: "ChaletComprime";
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.buy .informacoes p {
+    color: #e8e8e8;
+    font-family: "Chalet";
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.buy .informacoes .plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.buy .btn-plataforma .plataformas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s ease-in;
+    display: none;
+    opacity: 0;
+}
+
+.buy .btn-plataforma .plataformas.ativo {
+    display: flex;
+    opacity: 1;
+}
+
+.buy .btn-plataforma .plataformas li {
+    padding: 20px;
+}
+
+.buy .btn-plataforma .plataformas li:nth-child(1) {
+    border: 1px solid #00439c;
+}
+
+.buy .btn-plataforma .plataformas li:nth-child(1):hover {
+    background-color: #00439c;
+}
+
+.buy .btn-plataforma .plataformas li:nth-child(2) {
+    border: 1px solid #387a26;
+}
+
+.buy .btn-plataforma .plataformas li:nth-child(2):hover {
+    background-color: #387a26;
+}
+
+.logo {
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:focus {
+    color: orange;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-size: cover;
+}
+
+.icon-facebook {
+    background-image: url('../imagens/facebook.png');
+}
+
+.icon-twitter {
+    background-image: url('../imagens/twitter.png');
+}
+
+.icon-instagram {
+    background-image: url('../imagens/instagram.png');
+}
+
+.icon-youtube {
+    background-image: url('../imagens/youtube.png');
+}
+
+.legal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.legal p {
+    margin: 5px 0;
+}
+
+.legal a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
+.content-warning {
+    border-top: 1px solid #777;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.content-warning img {
+    width: 50px;
+}
+
+.content-warning p {
+    margin: 0;
+    color: #fff;
+}
+
+.content-warning a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-warning a:hover {
+    text-decoration: underline;
+}
+
+.bottom-links {
+    margin-top: 20px;
+}
+
+.bottom-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-links li {
+    margin-bottom: 10px;
+}
+
+.bottom-links li a {
+    color: #777;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bottom-links li a:hover {
+    color: orange;
+    font-weight: bold;
+}
